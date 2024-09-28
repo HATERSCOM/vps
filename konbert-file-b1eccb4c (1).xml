@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+  <row>
+    <name_Windows_Cloud_PC_Anydesk>on:</name_Windows_Cloud_PC_Anydesk>
+  </row>
+  <row>
+    <name_Windows_Cloud_PC_Anydesk>workflow_dispatch:</name_Windows_Cloud_PC_Anydesk>
+  </row>
+  <row>
+    <name_Windows_Cloud_PC_Anydesk>jobs:</name_Windows_Cloud_PC_Anydesk>
+  </row>
+  <row>
+    <name_Windows_Cloud_PC_Anydesk>build:</name_Windows_Cloud_PC_Anydesk>
+  </row>
+  <row>
+    <name_Windows_Cloud_PC_Anydesk>name: Start Building...</name_Windows_Cloud_PC_Anydesk>
+  </row>
+  <row>
+    <name_Windows_Cloud_PC_Anydesk>runs-on: windows-latest</name_Windows_Cloud_PC_Anydesk>
+  </row>
+  <row>
+    <name_Windows_Cloud_PC_Anydesk>timeout-minutes: 9999</name_Windows_Cloud_PC_Anydesk>
+  </row>
+  <row>
+    <name_Windows_Cloud_PC_Anydesk></name_Windows_Cloud_PC_Anydesk>
+  </row>
+  <row>
+    <name_Windows_Cloud_PC_Anydesk>steps:</name_Windows_Cloud_PC_Anydesk>
+  </row>
+  <row>
+    <name_Windows_Cloud_PC_Anydesk>- name: Downloading &amp; Installing Essentials</name_Windows_Cloud_PC_Anydesk>
+  </row>
+  <row>
+    <name_Windows_Cloud_PC_Anydesk>run: |</name_Windows_Cloud_PC_Anydesk>
+  </row>
+  <row>
+    <name_Windows_Cloud_PC_Anydesk>Invoke-WebRequest -Uri "https://www.dropbox.com/scl/fi/7eiczvgil84czu55dxep3/Downloads.bat?rlkey=wzdc1wxjsph2b7r0atplmdz3p&amp;dl=1" -OutFile "Downloads.bat"</name_Windows_Cloud_PC_Anydesk>
+  </row>
+  <row>
+    <name_Windows_Cloud_PC_Anydesk>cmd /c Downloads.bat</name_Windows_Cloud_PC_Anydesk>
+  </row>
+  <row>
+    <name_Windows_Cloud_PC_Anydesk>- name: Log In To AnyDesk</name_Windows_Cloud_PC_Anydesk>
+  </row>
+  <row>
+    <name_Windows_Cloud_PC_Anydesk>run: cmd /c start.bat</name_Windows_Cloud_PC_Anydesk>
+  </row>
+  <row>
+    <name_Windows_Cloud_PC_Anydesk>- name: Time Counter</name_Windows_Cloud_PC_Anydesk>
+  </row>
+  <row>
+    <name_Windows_Cloud_PC_Anydesk>run: Start-Sleep -Seconds 14400</name_Windows_Cloud_PC_Anydesk>
+  </row>
+</root>
